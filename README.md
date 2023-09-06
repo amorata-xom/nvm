@@ -1,4 +1,9 @@
-# @jchip/nvm
+# Original repo from @jchip/nvm
+
+### Keeping a fork here *just in case* since it's the only known version that worked for Exxon's VDI/GME with no admin user allowed.
+
+Below is the full readme file. But for quick reference to install, go to session [Installing from github.com](#installing-from-githubcom).
+
 
 A universal node.js version manager for Windows (no admin) and Unix.
 
@@ -48,11 +53,11 @@ You can retrieve the install script from multiple sources. Listed below are thre
 
 ### Installing from github.com
 
-Retrieve install script from [github.com](https://www.github.com/jchip/nvm) directly:
+Retrieve install script from [github.com](https://www.github.com/amorata-xom/nvm) directly:
 
 ```powershell
 cd $Env:USERPROFILE;
-Invoke-WebRequest https://raw.githubusercontent.com/jchip/nvm/v1.5.4/install.ps1 -OutFile install.ps1;
+Invoke-WebRequest https://raw.githubusercontent.com/amorata-xom/nvm/v1.5.4/install.ps1 -OutFile install.ps1;
 .\install.ps1 -nvmhome $Env:USERPROFILE\nvm;
 del install.ps1
 ```
@@ -129,18 +134,18 @@ Please pick one and then copy and paste it into a bash terminal to run.
 
 ### Installing from github.com
 
-Retrieve the install script from [github.com](https://www.github.com/jchip/nvm):
+Retrieve the install script from [github.com](https://www.github.com/amorata-xom/nvm):
 
 Using cURL and the install script:
 
 ```bash
-NVM_HOME=~/nvm curl -o- https://raw.githubusercontent.com/jchip/nvm/v1.5.4/install.sh | bash
+NVM_HOME=~/nvm curl -o- https://raw.githubusercontent.com/amorata-xom/nvm/v1.5.4/install.sh | bash
 ```
 
 or wget:
 
 ```bash
-NVM_HOME=~/nvm wget -qO- https://raw.githubusercontent.com/jchip/nvm/v1.5.4/install.sh | bash
+NVM_HOME=~/nvm wget -qO- https://raw.githubusercontent.com/amorata-xom/nvm/v1.5.4/install.sh | bash
 ```
 
 ### Installing from unpkg.com
