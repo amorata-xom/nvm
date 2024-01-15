@@ -44,14 +44,13 @@ function Find-Folders {
 
 
 function getLtsVersion() {
-    $nodejsOrg = "https://nodejs.org"
+    $nodejsOrg = "https://nodejs.org/en/download"
     $nodejsHtml = "$Env:TMP\nodejs.html"
     $foundVersion = "v12.13.0"
-
+    
     Try {
         Invoke-WebRequest $nodejsOrg -OutFile $nodejsHtml
-        $M = Select-String -CaseSensitive -Path $nodejsHtml -Pattern 'Download[ *](.+)[ *]LTS'
-
+        $M = Select-String -Path $nodejsHtml -Pattern '<strong>([0-9]+\.[0-9]+\.[0-9]+)</strong>'
         $G = $M.Matches.Groups[1]
         if ($G.Success) {
             $v = $G.Value
