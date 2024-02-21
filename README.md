@@ -57,9 +57,9 @@ Retrieve install script from [github.com](https://www.github.com/amorata-xom/nvm
 
 ```powershell
 cd $Env:USERPROFILE;
-Invoke-WebRequest https://raw.githubusercontent.com/amorata-xom/nvm/v1.5.4/install.ps1 -OutFile install.ps1;
+Invoke-WebRequest https://raw.githubusercontent.com/amorata-xom/nvm/master/install.ps1 -OutFile install.ps1;
 .\install.ps1 -nvmhome $Env:USERPROFILE\nvm;
-del install.ps1
+rm install.ps1
 ```
 
 ### Installing from unpkg.com
